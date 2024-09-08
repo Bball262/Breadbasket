@@ -1,6 +1,7 @@
 package net.bball_262.breadbasket;
 
 import com.mojang.logging.LogUtils;
+import net.bball_262.breadbasket.blocks.BBblocks;
 import net.bball_262.breadbasket.items.BBCreativeTabs;
 import net.bball_262.breadbasket.items.BBitems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -23,7 +24,7 @@ public class Breadbasket
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "breadbasket";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public Breadbasket()
     {
@@ -31,6 +32,7 @@ public class Breadbasket
 
         BBitems.register(modEventBus);
         BBCreativeTabs.register(modEventBus);
+        BBblocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

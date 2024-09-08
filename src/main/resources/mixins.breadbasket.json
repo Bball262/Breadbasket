@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "net.bball_262.breadbasket.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "breadbasket.refmap.json",
+  "mixins": [
+    "CowMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

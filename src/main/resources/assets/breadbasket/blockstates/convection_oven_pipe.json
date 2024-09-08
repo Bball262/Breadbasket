@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "breadbasket:block/convection_oven_pipe",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "breadbasket:block/convection_oven_pipe"
+    },
+    "facing=south": {
+      "model": "breadbasket:block/convection_oven_pipe",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "breadbasket:block/convection_oven_pipe",
+      "y": 270
+    }
+  }
+}
